@@ -9,8 +9,14 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as CompraConfirmadaRouteImport } from './routes/compra-confirmada'
 import { Route as IndexRouteImport } from './routes/index'
 
+const CompraConfirmadaRoute = CompraConfirmadaRouteImport.update({
+  id: '/compra-confirmada',
+  path: '/compra-confirmada',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -19,28 +25,39 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/compra-confirmada': typeof CompraConfirmadaRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/compra-confirmada': typeof CompraConfirmadaRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/compra-confirmada': typeof CompraConfirmadaRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths: '/' | '/compra-confirmada'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to: '/' | '/compra-confirmada'
+  id: '__root__' | '/' | '/compra-confirmada'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  CompraConfirmadaRoute: typeof CompraConfirmadaRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/compra-confirmada': {
+      id: '/compra-confirmada'
+      path: '/compra-confirmada'
+      fullPath: '/compra-confirmada'
+      preLoaderRoute: typeof CompraConfirmadaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -53,6 +70,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  CompraConfirmadaRoute: CompraConfirmadaRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

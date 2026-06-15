@@ -41,7 +41,9 @@ export function Pricing() {
                 ))}
               </ul>
               <a
-                href="#"
+                href="https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=74261f8448ff4014a20c1c8ca3dc38e9"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="mt-8 h-12 inline-flex items-center justify-center rounded-full border border-primary text-primary font-medium hover:bg-primary hover:text-primary-foreground transition"
               >
                 Assinar agora
@@ -71,7 +73,9 @@ export function Pricing() {
                 ))}
               </ul>
               <a
-                href="#"
+                href="https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=8a234647592a48a7a0fe9e0d9cd2c5d6"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="mt-8 h-12 inline-flex items-center justify-center rounded-full bg-primary-foreground text-primary-dark font-medium hover:opacity-90 transition"
               >
                 Assinar agora
