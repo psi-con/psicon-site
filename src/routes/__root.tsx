@@ -77,14 +77,15 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "PsiCon — Consultório Online para Psicólogos" },
+      { name: "description", content: "Agenda, prontuários, gestão financeira e documentos automáticos em uma plataforma só. Feito exclusivamente para psicólogos." },
+      { name: "author", content: "PsiCon" },
+      { property: "og:title", content: "PsiCon — Consultório Online para Psicólogos" },
+      { property: "og:description", content: "Agenda, prontuários, gestão financeira e documentos automáticos em uma plataforma só. Feito exclusivamente para psicólogos." },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { property: "og:site_name", content: "PsiCon" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:site", content: "@psicon" },
     ],
     links: [
       {
@@ -107,7 +108,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 function RootShell({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <head>
         <HeadContent />
       </head>

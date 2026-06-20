@@ -190,7 +190,7 @@ export function Landing() {
               Comece hoje. É rápido, é simples — e você vai perguntar por que não fez isso antes.
             </p>
             <a
-              href="#"
+              href="#planos"
               className="mt-10 inline-flex h-14 items-center gap-2 rounded-full bg-primary-foreground px-9 text-primary-dark font-medium text-lg hover:opacity-90 transition"
             >
               Começar Agora <ArrowRight size={18} />
@@ -220,8 +220,8 @@ export function Landing() {
             </p>
           </div>
           <div className="flex md:justify-end gap-6 text-sm text-muted-foreground">
-            <a href="#" className="hover:text-primary-dark transition">Política de Privacidade</a>
-            <a href="#" className="hover:text-primary-dark transition">Termos de Uso</a>
+            <a href="/politica-de-privacidade" className="hover:text-primary-dark transition">Política de Privacidade</a>
+            <a href="/termos-de-uso" className="hover:text-primary-dark transition">Termos de Uso</a>
           </div>
         </div>
         <p className="mt-10 text-center text-xs text-muted-foreground">

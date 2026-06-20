@@ -1,6 +1,10 @@
 import { Check } from "lucide-react";
 import { Reveal } from "./Reveal";
 
+const MP_BASE = "https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=";
+const MP_PLAN_MENSAL = import.meta.env.VITE_MP_PLAN_ID_MENSAL as string;
+const MP_PLAN_ANUAL = import.meta.env.VITE_MP_PLAN_ID_ANUAL as string;
+
 const perks = [
   "Agenda + Google Calendar",
   "Prontuários digitais ilimitados",
@@ -41,7 +45,7 @@ export function Pricing() {
                 ))}
               </ul>
               <a
-                href="https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=74261f8448ff4014a20c1c8ca3dc38e9"
+                href={`${MP_BASE}${MP_PLAN_MENSAL}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-8 h-12 inline-flex items-center justify-center rounded-full border border-primary text-primary font-medium hover:bg-primary hover:text-primary-foreground transition"
@@ -73,7 +77,7 @@ export function Pricing() {
                 ))}
               </ul>
               <a
-                href="https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=8a234647592a48a7a0fe9e0d9cd2c5d6"
+                href={`${MP_BASE}${MP_PLAN_ANUAL}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-8 h-12 inline-flex items-center justify-center rounded-full bg-primary-foreground text-primary-dark font-medium hover:opacity-90 transition"
