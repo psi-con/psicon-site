@@ -123,8 +123,8 @@ function TermosDeUso() {
             <h2>11. Contato</h2>
             <p className="mt-2">
               Dúvidas sobre estes Termos:{" "}
-              <a href="mailto:contato@psicon.com.br" className="text-primary hover:underline">
-                contato@psicon.com.br
+              <a href="mailto:psicon.contato@gmail.com" className="text-primary hover:underline">
+                psicon.contato@gmail.com
               </a>
             </p>
           </div>

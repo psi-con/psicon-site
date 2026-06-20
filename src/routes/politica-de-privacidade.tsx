@@ -102,8 +102,8 @@ function PoliticaDePrivacidade() {
             </ul>
             <p className="mt-3">
               Para exercer esses direitos, envie um e-mail para{" "}
-              <a href="mailto:privacidade@psicon.com.br" className="text-primary hover:underline">
-                privacidade@psicon.com.br
+              <a href="mailto:psicon.contato@gmail.com" className="text-primary hover:underline">
+                psicon.contato@gmail.com
               </a>.
             </p>
           </div>
@@ -129,8 +129,8 @@ function PoliticaDePrivacidade() {
             <p className="mt-2">
               Para dúvidas sobre esta política ou sobre o tratamento de seus dados:
               <br />
-              <a href="mailto:privacidade@psicon.com.br" className="text-primary hover:underline">
-                privacidade@psicon.com.br
+              <a href="mailto:psicon.contato@gmail.com" className="text-primary hover:underline">
+                psicon.contato@gmail.com
               </a>
             </p>
           </div>

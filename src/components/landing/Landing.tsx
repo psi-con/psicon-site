@@ -6,6 +6,7 @@ import { Comparison } from "./Comparison";
 import { Pricing } from "./Pricing";
 import { Showcase } from "./Showcase";
 import { Testimonials } from "./Testimonials";
+import { FloatingContact } from "./FloatingContact";
 
 import { Flow } from "./Flow";
 import { motion } from "framer-motion";
@@ -23,6 +24,7 @@ const stats = [
 export function Landing() {
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
+      <FloatingContact />
       <Header />
 
       {/* HERO — split: copy left, tilted product image right */}
